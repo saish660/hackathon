@@ -1,0 +1,62 @@
+.navbar navbar-expand-lg bg-body-tertiary{
+      padding: 5cap;
+}
+
+.container-fluid{
+    background-color: rgb(65, 90, 204);
+}
+.navbar-nav{
+    display: flex;
+    text-align: center;
+}
+.nav-item{
+    padding: 10px;
+
+}
+.card {
+    width: 500px;
+    margin: 5cap auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.mb-3{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50cap;
+    margin-right: 50cap;
+
+}
+.form-labe{
+    display: flex;
+    padding: 5px;
+    margin-left: 50cap;
+    margin-right: auto;
+}
+.container{
+     position: absolute;
+    bottom: 8px;
+    /* right: 16px; */
+
+    justify-content: flex-end;
+
+}
+
+.navbar-num{
+    float: right;
+
+}
+
+.collapse navbar-collapse{
+    background-color: aqua;
+}

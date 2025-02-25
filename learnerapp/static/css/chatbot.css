@@ -1,0 +1,47 @@
+#user_prompt {
+    width: calc(100% - 130px);
+    height: 100px;
+    border: 0.1px solid grey;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 0 10px 10px 10px;
+    background-color: white;
+    outline: none;
+    position: fixed;
+    bottom: 10px;
+}
+
+#chat_button {
+    border: 0.1px solid grey;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    outline: none;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+#chat_window p {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+.prompt {
+    background-color: #DDFF99;
+}
+
+.response {
+    background-color: #CCDDFF;
+}
+
+#chat_window {
+    display: block;
+    height: calc(100vh - 200px);
+    width: 100%;
+    border: 0.1px solid grey;
+    overflow-y: scroll;
+}

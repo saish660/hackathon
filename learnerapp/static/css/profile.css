@@ -1,0 +1,15 @@
+.card {
+    width: 500px;
+    margin-top:5cap;
+    margin-left: 45cap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.card-img-top {
+    width: 100px;
+}

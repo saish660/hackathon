@@ -1,0 +1,17 @@
+{% extends 'layouts/contentLayout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/leaderboard.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="leaderboard">
+    {% for user in users %}
+        <div class="user_card">
+            <p class="username">{{ user.username }}</p>
+            <p class="points">{{ user.points }}</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

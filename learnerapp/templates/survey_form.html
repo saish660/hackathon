@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input, select {
+            border: none;
+            outline: none;
+            background: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            display: inline;
+        }
+        .wrapper{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(179, 210, 214);
+            max-width: 2000px;
+            padding: 25px 30px;
+        }
+
+        .title{
+            font-size: 40px;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+        }
+
+        .wrapper form.title::before{
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 33px;
+            bottom: 3px;
+            left: 0;
+            border-radius: 5px;
+            background: linear-gradient(to right, #99004d 0%,#ff0080 100%);
+        }
+        .wrapper form .input-box{
+            width: 100px;
+            height: 45px;
+            margin-top: 25px;
+            position: relative;
+        }
+
+        .field{
+            padding: 6px;
+        }
+        .wrapper form .field input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border: none;
+
+        }
+
+        .form-control{
+            padding: 15px;
+
+        }
+        /* .wrapper form. .underline::before{
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background: #ccc;
+            left: 0;
+            bottom: 0;
+
+        }
+        .wrapper form .underline::after{
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, #99004d 0%,#ff0080 100%);
+            left: 0;
+            bottom: 0;
+            transform: scaleX(0);
+
+        } */
+    </style>
+</head>
+<body>
+     <div class="wrapper">
+        <form action="/submit_survey" method="POST">
+            {% csrf_token %}
+        <div class="title">Let's set up the environment for you</div>
+
+    <div class="field">
+        <label>Age</label>
+        <input type="number" name="age" id="age" placeholder="Age" required>
+    </div>
+
+
+    <div class="form-control">
+        <label for="role" id="label-role">What is your experience with programming? </label>
+        <select name="experience_level" id="role" required>
+            <option value="0">None</option>
+            <option value="1">A little bit</option>
+            <option value="2">Good</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <input type="submit" value="Submit">
+
+    </div>
+        </form>
+     </div>
+
+</body>
+</html>

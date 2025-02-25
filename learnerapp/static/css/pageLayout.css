@@ -1,0 +1,17 @@
+.open_chatbot{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    right: 10px;
+    background: #CCDDFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.lesson-content {
+    border: 1px solid black;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px auto;
+}

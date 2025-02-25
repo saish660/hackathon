@@ -1,0 +1,73 @@
+~ Python JSON
+JSON is a syntax for storing and exchanging data.
+
+JSON is text, written with JavaScript object notation.
+
+JSON in Python
+Python has a built-in package called json, which can be used to work with JSON data.
+
+ExampleGet your own Python Server
+Import the json module:
+
+import json
+Parse JSON - Convert from JSON to Python
+If you have a JSON string, you can parse it by using the json.loads() method.
+
+The result will be a Python dictionary.
+
+Example
+Convert from JSON to Python:
+
+import json
+
+# some JSON:
+x =  '{ "name":"John", "age":30, "city":"New York"}'
+
+# parse x:
+y = json.loads(x)
+
+# the result is a Python dictionary:
+print(y["age"])
+Convert from Python to JSON
+If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
+
+Example
+Convert from Python to JSON:
+
+import json
+
+# a Python object (dict):
+x = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+}
+
+# convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)
+
+Python User Input
+User Input
+Python allows for user input.
+
+That means we are able to ask the user for input.
+
+The method is a bit different in Python 3.6 than Python 2.7.
+
+Python 3.6 uses the input() method.
+
+Python 2.7 uses the raw_input() method.
+
+The following example asks for the username, and when you entered the username, it gets printed on the screen:
+
+
+username = input("Enter username:")
+print("Username is: " + username)
+Python 2.7
+username = raw_input("Enter username:")
+print("Username is: " + username)
+Python stops executing when it comes to the input() function, and continues when the user has given some input.
+

@@ -1,0 +1,14 @@
+{% extends 'layouts/pageLayout.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="lesson-content">
+    <i data-content="{{ raw_content }}" id="speak">Read Aloud</i>
+              <p>{{ content|safe }}</p>
+
+        <a class="btn btn-primary" href="{% url 'quiz' lesson_name lesson_id %}">Quiz</a>
+
+    </div>
+
+<script src="{% static 'js/lessons.js' %}" type="text/javascript" defer></script>
+{% endblock %}

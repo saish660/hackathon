@@ -1,0 +1,19 @@
+{% extends 'layouts/pageLayout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/chatbot.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div id="chat_window">
+
+    </div>
+    <div id="chat-input-window">
+        <input type="text" id="user_prompt" name="prompt" placeholder="How may i help you?">
+        <button id="chat_button">--></button>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="{% static 'js/chatbot.js' %}" type="text/javascript" defer></script>
+{% endblock %}

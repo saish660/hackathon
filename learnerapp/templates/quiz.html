@@ -1,0 +1,28 @@
+{% extends 'layouts/pageLayout.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+    <script src="{% static 'js/quiz.js' %}" type="text/javascript" defer></script>
+{% endblock %}
+
+{% block body %}
+    {% if message %}
+        <h2>{{ message }}</h2>
+    {% else %}
+    {% for question, options in content.items %}
+        <ul>
+            {{ question }}
+            <br>
+            <ol>
+                {% for option in options %}
+                   <button class="option">{{ option }}</button>
+                {% endfor %}
+            </ol>
+            <br>
+        </ul>
+    {% endfor %}
+    {% endif %}
+
+    <button id="submit">Submit Quiz</button>
+{% endblock %}
