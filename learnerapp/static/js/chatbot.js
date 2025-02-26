@@ -17,7 +17,7 @@ async function get_response(prompt) {
     fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer <openrouter api key>",
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
