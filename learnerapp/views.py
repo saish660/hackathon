@@ -10,7 +10,7 @@ from django.urls import reverse
 from .models import User, Course
 
 
-api_key = "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"
+api_key = <openrouter api key string>
 
 
 def create_course_pages():
